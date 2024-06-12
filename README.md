@@ -11,6 +11,15 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install OdooFlo
 ```bash
 pip install OdooFlow
 
+After installing the package, you need to configure the environment variables.
+
+1. Copy the `.envexample` file to create your own `.env` file:
+
+   sh cp .envexample .env
+
+2. Or you can load your own env file locally. 
+  
+
 ```
 
 ```bash
@@ -27,3 +36,25 @@ quantities = [5, 2]  # Corresponding quantities
 result = create_sales_order(customer_identifier, product_ids, quantities)
 print(result)
 ```
+
+```bash
+## Env Notes
+If you don't change the env file from the example you can load it locally
+
+from OdooFlow import create_sales_order
+
+from dotenv import load_dotenv, find_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv(find_dotenv())
+
+
+customer_identifier = 'John Doe'  # Could also be an integer ID
+product_ids = [30, 42]  # Product IDs
+quantities = [5, 2]  # Corresponding quantities
+
+result = create_sales_order(customer_identifier, product_ids, quantities)
+print(result)
+```
+
