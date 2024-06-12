@@ -1,0 +1,5 @@
+URL='localhost'
+DB_NAME='db1'
+USERNAME_odoo='test@test.com'
+PASSWORD='test@test.com'
+
