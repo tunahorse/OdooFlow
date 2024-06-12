@@ -24,8 +24,8 @@ After installing the package, you need to configure the environment variables.
   
 
 
-```bash
-Create a .env with your login info for Odoo. Note: ENV can sometimes pickup the username from the server env so I used USERNAME_odoo. I have an example file here called .exampleenv
+
+Set up the .env with your login info for Odoo. Note: ENV can sometimes pick up the username from the server env so I used USERNAME_odoo. I have an example file here called .exampleenv, modify as needed. 
 
 ```
 ```bash
