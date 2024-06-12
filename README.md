@@ -1,7 +1,7 @@
 
 # OdooFlow
 
-OdooFlow is a Python package designed to create records in Odoo more cleanly and simply. Currently, you can use OdooFlow to create sales orders in Odoo with multiple products for a specified customer identified by ID or name. This eliminates the need to build a custom pipeline for the tuples; simply pass the customer name and product information.
+OdooFlow is a Python package designed to create records in Odoo in a cleaner and simpler way. Currently, you can use OdooFlow to create sales orders in Odoo with multiple products for a specified customer identified by ID or name. This eliminates the need to build a custom pipeline for the tuples; simply pass the customer name and product information.
 
 ## Installation
 
@@ -69,8 +69,4 @@ quantities = [5, 2]  # Corresponding quantities
 result = create_sales_order(customer_identifier, product_ids, quantities)
 print(result)
 \`\`\`
-"""
 
-# Save the content to a README.md file
-with open('/mnt/data/README.md', 'w') as file:
-    file.write(readme_content)
