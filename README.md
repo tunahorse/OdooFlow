@@ -10,17 +10,19 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install OdooFlo
 
 ```bash
 pip install OdooFlow
+```
 
 After installing the package, you need to configure the environment variables.
 
 1. Copy the `.envexample` file to create your own `.env` file:
 
+   ```bash
    sh cp .envexample .env
+   ```
 
 2. Or you can load your own env file locally. 
   
 
-```
 
 ```bash
 Create a .env with your login info for Odoo. Note: ENV can sometimes pickup the username from the server env so I used USERNAME_odoo. I have an example file here called .exampleenv
