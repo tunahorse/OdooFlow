@@ -7,17 +7,17 @@ OdooFlow is a Python package designed to create records in Odoo in a cleaner and
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install OdooFlow.
 
-\`\`\`bash
+```bash
 pip install OdooFlow
-\`\`\`
+```
 
 After installing the package, you need to configure the environment variables.
 
 1. Copy the `.envexample` file to create your own `.env` file:
 
-    \`\`\`bash
+   ```bash
     cp .envexample .env
-    \`\`\`
+    ```
 
 2. Or you can load your own `.env` file locally.
 
@@ -25,7 +25,7 @@ Set up the `.env` with your login information for Odoo. Note: ENV can sometimes 
 
 ### Example .env File
 
-\`\`\`env
+```bash
 URL=https://your-odoo-url
 DB_NAME=your_database_name
 USERNAME_odoo=your_username
@@ -33,13 +33,13 @@ PASSWORD=your_password
 
 # Add any new variables here
 NEW_VARIABLE=new_value
-\`\`\`
+```
 
 ## Usage
 
 After setting up the `.env` file, you can use the package as follows:
 
-\`\`\`python
+```python
 from OdooFlow import create_sales_order
 
 customer_identifier = 'John Doe'  # Could also be an integer ID
@@ -48,13 +48,13 @@ quantities = [5, 2]  # Corresponding quantities
 
 result = create_sales_order(customer_identifier, product_ids, quantities)
 print(result)
-\`\`\`
+```
 
 ## Environment Notes
 
 If you don't change the environment file from the example, you can load it locally as shown below:
 
-\`\`\`python
+```python
 from OdooFlow import create_sales_order
 from dotenv import load_dotenv, find_dotenv
 import os
@@ -68,5 +68,5 @@ quantities = [5, 2]  # Corresponding quantities
 
 result = create_sales_order(customer_identifier, product_ids, quantities)
 print(result)
-\`\`\`
+```
 
